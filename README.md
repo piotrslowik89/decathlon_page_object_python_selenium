@@ -1,4 +1,12 @@
-# python_selenium_template
+# Todo
+1. Uzupełnić page objecty
+2. rozpisać kolejne testy
+3. opisać za pomocą adnotacji idodać screnshoty
+4. wygenerować raport
+5. posprzątać
+
+
+# deacthlon_page_object_python_selenium
 
 
 ![Project Image](project-image-url)
@@ -14,11 +22,15 @@
 
 
 # Description
-Introduction...
+The project is made in the page object pattern. I am testing the website decathlon.pl.
 
-- Technology 1
-- Technology 2
 
+
+Reports are generated in:
+
+## Technologies :
+- Python
+- Selenium
 # How To Use
 
 
