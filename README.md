@@ -5,6 +5,8 @@
 4. wygenerować raport
 5. posprzątać
 
+pytest --alluredir=C:\Users\piotr\projects\pythonProjects\decathlon_page_object_python_selenium\report
+allure serve C:\Users\piotr\projects\pythonProjects\\decathlon_page_object_python_selenium\report
 
 # deacthlon_page_object_python_selenium
 

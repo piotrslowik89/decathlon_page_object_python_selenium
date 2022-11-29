@@ -12,17 +12,18 @@ class HomePage:
         self.button_accept_id = 'didomi-notice-agree-button'
         self.button_menu = 'menu-button svelte-156j4bw'
 
-    @allure.step("Test 1")
+    @allure.step("Step 1")
     def privacy_policy(self):
         self.driver.find_element(By.ID, self.button_accept_id).click()
         # doddać jakąś asercję
 
-    @allure.step("Test 2")
+    @allure.step("Step 2")
     def left_menu(self):
         self.driver.find_element(By.CSS_SELECTOR, '.menu-button').click()
         # asercja dotyczaca menu
         self.driver.find_element(By.CSS_SELECTOR, '.close').click()
 
+    @allure.step("Step 2")
     def navbar(self):
         navbar_element_1 = self.driver.find_element(By.CSS_SELECTOR, 'button.svelte-13mgb6t:nth-child(1)')
         navbar_element_2 = self.driver.find_element(By.CSS_SELECTOR, 'button.svelte-13mgb6t:nth-child(2)')
@@ -41,10 +42,4 @@ class HomePage:
         webdriver.ActionChains(self.driver).move_to_element(navbar_element_7).perform()
         webdriver.ActionChains(self.driver).move_to_element(navbar_element_8).perform()
 
-
-
-
-
-
-
-        # allure.attach(self.driver.get_screenshot_as_png(), name="exampleName", attachment_type=AttachmentType.PNG)
+        allure.attach(self.driver.get_screenshot_as_png(), name="exampleName", attachment_type=AttachmentType.PNG)
